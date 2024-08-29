@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    /* Remove default margin and padding, set box-sizing to border-box for all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    /* Set the font family, background with a gradient, and text color */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e3ebeb, #04b383);
+    color: #04343c;
+    /* Smooth transition for background and text color changes */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+.container {
+    /* Set a maximum width for the container and center it with auto margin */
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    /* Center content and align it vertically, with padding and a border at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #04b383;
+    /* Positioning for the theme toggle button */
+    position: relative;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    /* Position the button at the top right corner of the header */
+    position: absolute;
+    top: 10px;
+    right: 10px;    
+    /* Remove background and border, adjust font size and cursor style */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #04b383;
+    /* Transition for color change */
+    transition: color 0.3s ease;
+}
+
+/* Profile Section */
+.profile {
+    /* Center the profile image and text horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    /* Make the profile image round and set size */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* Add spacing between the image and the text */
+    margin-right: 20px;
+}
+
+/* Profile Info */
+.profile-info {
+    /* Allow the profile info to take up remaining space */
+    flex: 1;
+}
+
+.profile-info h1 {
+    /* Style the name heading with flex for icon alignment */
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #048336b;
+}
+
+.profile-info h1 i {
+    /* Add spacing between the icon and the name */
+    margin-right: 10px;
+}
+
+.tagline {
+    /* Style the tagline with font size and color */
+    font-size: 1em;
+    color: #04b383;
+}
+
+/* Links Container */
+.links-container {
+    /* Add vertical spacing around the links */
+    margin: 20px 0;
+}
+
+/* Link Buttons */
+.link-btn {
+    /* Style for each link button: flex layout, padding, background, etc. */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+    margin: 10px 0;
+    background: #04b383;
+    color: #e3ebeb;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    /* Transition for background color and shadow on hover */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-btn i {
+    /* Style for the icons inside the link buttons */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Hover Effect for Link Buttons */
+.link-btn:hover {
+    /* Change background color and add shadow on hover */
+    background: #04343C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Button */
+.cta {
+    /* Add margin below the CTA button */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Space up top */
+}
+
+.cta-btn {
+    /* Style for the Call to Action button: padding, background, etc. */
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #04343C, #04343C);
+    color: #e3ebeb;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    /* Transition for background color and shadow on hover */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for CTA Button */
+.cta-btn:hover {
+    /* Change background color and add shadow on hover */
+    background: #04b383;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    /* Style the footer with background color, padding, and text alignment */
+    margin-top: 20px;
+    text-align: center;
+    color: #e3ebeb;
+    background: #04343c;
+    padding: 10px;
+    border-radius: 5px;
+}
